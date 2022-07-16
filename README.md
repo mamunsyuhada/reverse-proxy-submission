@@ -1,4 +1,4 @@
-# Reverse Proxy Submission (DevOps-Dicoding)
+# NGINX as Reverse Proxy Submission (DevOps-Dicoding)
 
 ### How to run it ?
 
