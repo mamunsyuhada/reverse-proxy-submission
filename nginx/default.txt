@@ -1,13 +1,8 @@
-# NGINX as Reverse Proxy Submission (DevOps-Dicoding)
-
-## NGINX.conf
-```
 upstream app {
   server app-express:8000;
 }
 
 limit_req_zone $binary_remote_addr zone=one:10m rate=10r/m;
-
 server {
   listen 3000 default_server;
 
@@ -22,10 +17,3 @@ server {
     limit_req zone=one;
   }
 }
-
-```
-### How to run it ?
-
-```
-docker compose -f "docker.compose.yml" up -d --build
-```
